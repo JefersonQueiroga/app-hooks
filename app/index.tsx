@@ -1,18 +1,18 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
-    Alert,
-    ScrollView,
-    StyleSheet,
-    Text,
-    TextInput,
-    TouchableOpacity,
-    View
+  Alert,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View
 } from 'react-native';
 
 function App() {
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.title}>🪝 Top 5 Hooks Mais Usados</Text>
+      <Text style={styles.title}>Top 5 Hooks Mais Usados</Text>
       
       <UseStateExample />
       <UseEffectExample />
@@ -58,7 +58,7 @@ function UseStateExample() {
         onChangeText={setNome}
       />
       
-      {nome && <Text>Oi, {nome}! 👋</Text>}
+      {nome && <Text>Oi, {nome}!</Text>}
     </View>
   );
 }
@@ -87,7 +87,7 @@ function UseEffectExample() {
       <Text style={styles.titulo}>2. useEffect</Text>
       <Text style={styles.descricao}>Faz algo quando as coisas mudam</Text>
       
-      <Text style={styles.numero}>⏰ {segundos} segundos</Text>
+      <Text style={styles.numero}>{segundos} segundos</Text>
       
       <TouchableOpacity 
         style={[styles.botao, { backgroundColor: ligado ? '#FF3B30' : '#34C759' }]}
